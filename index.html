@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Own premium land in Olubunmi Gardens - Government-approved plots with C of O near Lekki-Epe International Airport">
-    <title>Olubunmi Gardens - Exclusive Land Offer | Deh Realty</title>
+    <meta name="description" content="Own premium farmland in Palm Crest - Government-approved plots with C of O near Lekki-Epe International Airport">
+    <title>Palm Crest Farmland - Exclusive Land Offer | Deh Realty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -13,1401 +13,539 @@
       emailjs.init("R84VEcKQPmP7ImWX8");
     </script>
     <style>
-      :root {
-        --primary-green: #0f7718;
-        --dark-green: #043814;
-        --light-green: #e8f5e9;
-        --accent-red: #e9210b;
-        --dark-red: #c0190a;
-        --gold: #ffd600;
-        --white: #ffffff;
-        --off-white: #f8f9fa;
-        --dark-text: #2c3e50;
-      }
-      
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      
-      body {
-        font-family: 'Poppins', sans-serif;
-        line-height: 1.6;
-        color: var(--dark-text);
-        overflow-x: hidden;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      /* Logo Styles */
-      .logo-container {
-          max-width: 300px;
-          margin: 0 auto;
-          padding: 1rem;
-          text-align: center;
-      }
-
-      .logo-container img {
-          width: 100%;
-          height: auto;
-          max-height: 100px;
-          object-fit: contain;
-          transition: transform 0.3s ease;
-      }
-
-      .logo-container img:hover {
-          transform: scale(1.05);
-      }
-      
-      /* Header Styles */
-      .header {
-          text-align: center;
-          padding: 3rem 1.25rem;
-          background-color: var(--off-white);
-          width: 100%;
-          background-image: linear-gradient(rgba(248, 249, 250, 0.9), rgba(248, 249, 250, 0.9)), url('image/hero-bg.jpg');
-          background-size: cover;
-          background-position: center;
-      }
-
-      h1 {
-          color: var(--dark-text);
-          font-size: clamp(2.5rem, 6vw, 5rem);
-          margin-bottom: 1.25rem;
-          font-weight: 900;
-          line-height: 1.2;
-          text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-      }
-
-      .urgency-text {
-          color: var(--accent-red);
-          font-size: clamp(1.25rem, 3vw, 1.875rem);
-          font-weight: 900;
-          margin: 1.25rem 0;
-          text-transform: uppercase;
-          animation: pulse 2s infinite;
-      }
-
-      @keyframes pulse {
-          0% { transform: scale(1); }
-          50% { transform: scale(1.05); }
-          100% { transform: scale(1); }
-      }
-
-      /* Highlight Section */
-      .highlight {
-          background-color: var(--primary-green);
-          color: var(--white);
-          width: 100%;
-          padding: 5rem 1.25rem;
-          text-align: center;
-          position: relative;
-          overflow: hidden;
-      }
-
-      .highlight::before {
-          content: '';
-          position: absolute;
-          top: -50%;
-          left: -50%;
-          width: 200%;
-          height: 200%;
-          background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
-          transform: rotate(30deg);
-      }
-
-      .highlight p {
-          font-size: clamp(1.25rem, 3vw, 1.875rem);
-          line-height: 1.6;
-          max-width: 56.25rem;
-          margin: 0 auto 2.5rem;
-          padding: 0 1rem;
-          position: relative;
-      }
-
-      .highlight strong {
-          color: var(--gold);
-          font-weight: 900;
-      }
-
-      /* Video Container */
-      .video-container {
-          position: relative;
-          width: 90%;
-          max-width: 56.25rem;
-          padding-bottom: 50.625%; /* 16:9 aspect ratio */
-          margin: 2.5rem auto;
-          border-radius: 0.75rem;
-          overflow: hidden;
-          box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.2);
-          border: 0.625rem solid var(--dark-green);
-          background-color: var(--dark-green);
-          transition: transform 0.3s ease;
-      }
-
-      .video-container:hover {
-          transform: translateY(-5px);
-      }
-
-      .video-container iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border: none;
-      }
-
-      /* CTA Button */
-      .cta-button {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          gap: 0.5rem;
-          background-color: var(--accent-red);
-          color: var(--white);
-          padding: 0.9375rem 2.5rem;
-          font-size: clamp(1.125rem, 3vw, 1.5rem);
-          font-weight: 900;
-          text-decoration: none;
-          border-radius: 3.125rem;
-          margin: 1.25rem 0;
-          transition: all 0.3s ease;
-          box-shadow: 0 0.3125rem 0.9375rem rgba(233, 33, 11, 0.4);
-          border: none;
-          cursor: pointer;
-          position: relative;
-          overflow: hidden;
-          z-index: 1;
-      }
-
-      .cta-button::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: var(--dark-red);
-          transform: translateX(-100%);
-          transition: transform 0.3s ease;
-          z-index: -1;
-      }
-
-      .cta-button:hover {
-          transform: translateY(-0.1875rem);
-          box-shadow: 0 0.5rem 1.25rem rgba(233, 33, 11, 0.6);
-      }
-
-      .cta-button:hover::before {
-          transform: translateX(0);
-      }
-
-      .cta-button svg {
-          width: 20px;
-          height: 20px;
-          transition: transform 0.3s ease;
-      }
-
-      .cta-button:hover svg {
-          transform: translateX(5px);
-      }
-
-      /* Benefits Section */
-      .benefits-section {
-          background-color: var(--light-green);
-          padding: 5rem 1.25rem;
-          position: relative;
-      }
-
-      .benefits-section::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 20px;
-          background: linear-gradient(to right, var(--primary-green), var(--gold), var(--primary-green));
-          opacity: 0.2;
-      }
-
-      .section-title {
-          color: var(--dark-green);
-          font-size: clamp(2rem, 5vw, 2.625rem);
-          text-align: center;
-          margin-bottom: 3.125rem;
-          font-weight: 900;
-          padding: 0 1rem;
-          position: relative;
-          display: inline-block;
-      }
-
-      .section-title::after {
-          content: '';
-          position: absolute;
-          bottom: -10px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 80px;
-          height: 4px;
-          background-color: var(--accent-red);
-          border-radius: 2px;
-      }
-
-      .benefits-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
-          gap: 1.875rem;
-          max-width: 75rem;
-          margin: 0 auto;
-          padding: 0 1rem;
-      }
-
-      .benefit-item {
-          background-color: var(--white);
-          border-radius: 0.9375rem;
-          padding: 1.875rem;
-          box-shadow: 0 0.3125rem 0.9375rem rgba(0,0,0,0.05);
-          display: flex;
-          align-items: flex-start;
-          transition: all 0.3s ease;
-          border-left: 5px solid var(--accent-red);
-      }
-
-      .benefit-item:hover {
-          transform: translateY(-0.3125rem);
-          box-shadow: 0 0.9375rem 1.875rem rgba(0,0,0,0.1);
-      }
-
-      .benefit-number {
-          background-color: var(--accent-red);
-          color: var(--white);
-          width: 2.5rem;
-          height: 2.5rem;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.375rem;
-          font-weight: bold;
-          margin-right: 1.25rem;
-          flex-shrink: 0;
-          transition: all 0.3s ease;
-      }
-
-      .benefit-item:hover .benefit-number {
-          transform: rotate(360deg);
-      }
-
-      .benefit-text {
-          color: var(--dark-green);
-          font-size: clamp(1.125rem, 2vw, 1.25rem);
-          font-weight: 700;
-          line-height: 1.4;
-      }
-
-      /* Location Section */
-      .location-section {
-          background-color: var(--dark-green);
-          padding: 5rem 1.25rem;
-          color: var(--white);
-          position: relative;
-          overflow: hidden;
-      }
-
-      .location-section::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: url('image/map-pattern.png');
-          opacity: 0.05;
-          pointer-events: none;
-      }
-
-      .location-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
-          gap: 1.875rem;
-          max-width: 75rem;
-          margin: 0 auto 3.75rem;
-          padding: 0 1rem;
-          position: relative;
-      }
-
-      .location-item {
-          border: 0.1875rem solid var(--primary-green);
-          border-radius: 0.9375rem;
-          padding: 1.875rem 1.5625rem 1.5625rem;
-          position: relative;
-          transition: all 0.3s ease;
-          background-color: rgba(255,255,255,0.05);
-          backdrop-filter: blur(5px);
-      }
-
-      .location-item:hover {
-          transform: translateY(-0.3125rem);
-          background-color: rgba(255,255,255,0.1);
-      }
-
-      .location-number {
-          background-color: var(--primary-green);
-          color: var(--white);
-          width: 2.5rem;
-          height: 2.5rem;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.375rem;
-          font-weight: bold;
-          position: absolute;
-          top: -1.25rem;
-          left: 1.25rem;
-          transition: all 0.3s ease;
-      }
-
-      .location-item:hover .location-number {
-          background-color: var(--gold);
-          color: var(--dark-green);
-      }
-
-      .location-text {
-          font-size: clamp(1.125rem, 2vw, 1.25rem);
-          line-height: 1.4;
-          margin-top: 0.9375rem;
-      }
-
-      /* Urgency Section */
-      .urgency {
-          background-color: var(--accent-red);
-          padding: 2.5rem;
-          border-radius: 0.75rem;
-          text-align: center;
-          max-width: 56.25rem;
-          margin: 0 auto;
-          box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.2);
-          position: relative;
-          overflow: hidden;
-      }
-
-      .urgency::before {
-          content: '';
-          position: absolute;
-          top: -50%;
-          left: -50%;
-          width: 200%;
-          height: 200%;
-          background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
-          animation: rotate 20s linear infinite;
-      }
-
-      @keyframes rotate {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-      }
-
-      .urgency p {
-          font-size: clamp(1.125rem, 3vw, 1.5rem);
-          line-height: 1.6;
-          margin-bottom: 1.25rem;
-          position: relative;
-      }
-
-      .urgency p strong {
-          font-size: clamp(1.25rem, 3vw, 1.75rem);
-          font-weight: 900;
-          display: block;
-          margin-top: 0.9375rem;
-      }
-
-      /* Pricing Section */
-      .pricing-section {
-          background-color: var(--light-green);
-          padding: 5rem 1.25rem;
-          color: var(--dark-green);
-          text-align: center;
-      }
-    
-      .pricing-content {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-          gap: 2.5rem;
-          max-width: 75rem;
-          margin: 0 auto;
-          padding: 0 1rem;
-      }
-    
-      .pricing-details {
-          flex: 1;
-          min-width: 18.75rem;
-          max-width: 37.5rem;
-          text-align: left;
-      }
-    
-      .pricing-image-container {
-          flex: 1;
-          min-width: 18.75rem;
-          max-width: 37.5rem;
-          border-radius: 0.75rem;
-          overflow: hidden;
-          box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.1);
-          transition: all 0.3s ease;
-      }
-
-      .pricing-image-container:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,0.15);
-      }
-    
-      .pricing-image {
-          width: 100%;
-          height: auto;
-          display: block;
-          border: 0.1875rem solid var(--primary-green);
-          border-radius: 0.75rem;
-          transition: transform 0.5s ease;
-      }
-
-      .pricing-image-container:hover .pricing-image {
-          transform: scale(1.03);
-      }
-    
-      .price-list {
-          margin-bottom: 2.5rem;
-      }
-    
-      .price-item {
-          display: flex;
-          align-items: center;
-          font-size: clamp(1.125rem, 2vw, 1.375rem);
-          margin-bottom: 1.5625rem;
-          padding-bottom: 0.9375rem;
-          border-bottom: 0.0625rem dashed var(--primary-green);
-          transition: all 0.3s ease;
-      }
-
-      .price-item:hover {
-          transform: translateX(10px);
-      }
-    
-      .price-item:last-child {
-          border-bottom: none;
-      }
-    
-      .check-icon {
-          color: var(--primary-green);
-          font-size: 1.75rem;
-          margin-right: 1.25rem;
-          flex-shrink: 0;
-          transition: all 0.3s ease;
-      }
-
-      .price-item:hover .check-icon {
-          transform: scale(1.2);
-      }
-    
-      .price-amount {
-          font-weight: 700;
-          margin-left: auto;
-          color: var(--accent-red);
-          transition: all 0.3s ease;
-      }
-
-      .price-item:hover .price-amount {
-          color: var(--dark-red);
-      }
-    
-      .pricing-note {
-          font-size: clamp(1rem, 2vw, 1.25rem);
-          margin: 1.875rem 0;
-          line-height: 1.6;
-      }
-
-      .urgency-note {
-          font-size: clamp(1.125rem, 3vw, 1.5rem);
-          font-weight: 700;
-          color: var(--accent-red);
-          margin: 1.875rem 0;
-          position: relative;
-          display: inline-block;
-      }
-
-      .urgency-note::after {
-          content: '';
-          position: absolute;
-          bottom: -5px;
-          left: 0;
-          width: 100%;
-          height: 3px;
-          background: linear-gradient(to right, var(--accent-red), var(--gold), var(--accent-red));
-          border-radius: 3px;
-      }
-
-/* Testimonial Container */
-.testimonial-container {
-    background: linear-gradient(135deg, #043814 0%, #0a5c1f 100%);
-    padding: 3rem 2rem;
-    border-radius: 12px;
-    margin: 2rem auto;
-    max-width: 1200px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    position: relative;
-    overflow: hidden;
-}
-
-.testimonial-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('image/dots-pattern.png');
-    opacity: 0.05;
-    pointer-events: none;
-}
-
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    position: relative;
-}
-
-/* Image Column */
-.testimonial-image {
-    position: relative;
-    text-align: center;
-}
-
-.founder-portrait {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 12px;
-    border: 4px solid #ffd700;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-}
-
-.testimonial-image:hover .founder-portrait {
-    transform: scale(1.02);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
-}
-
-.client-badge {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #e9210b;
-    color: white;
-    padding: 1rem 1.5rem;
-    border-radius: 50px;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.3s ease;
-    z-index: 2;
-}
-
-.client-badge:hover {
-    transform: translateX(-50%) scale(1.05);
-}
-
-.client-badge span {
-    font-size: 1.8rem;
-    line-height: 1;
-    margin-bottom: 0.2rem;
-}
-
-/* Content Column */
-.testimonial-content {
-    color: white;
-}
-
-.testimonial-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #ffd700;
-    position: relative;
-    display: inline-block;
-}
-
-.testimonial-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #ffd700;
-    border-radius: 3px;
-}
-
-.testimonial-quote p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    position: relative;
-}
-
-.benefit-list {
-    margin: 1.5rem 0;
-    padding-left: 0;
-    list-style: none;
-}
-
-.benefit-list li {
-    margin-bottom: 0.8rem;
-    position: relative;
-    padding-left: 2rem;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-}
-
-.benefit-list li:hover {
-    transform: translateX(5px);
-}
-
-.check-icon {
-    position: absolute;
-    left: 0;
-    color: #ffd700;
-    font-weight: bold;
-}
-
-.closing-statement {
-    font-size: 1.1rem;
-    font-weight: 500;
-    background: rgba(255,255,255,0.1);
-    padding: 1rem;
-    border-radius: 8px;
-    border-left: 3px solid #ffd700;
-    transition: all 0.3s ease;
-}
-
-.closing-statement:hover {
-    background: rgba(255,255,255,0.2);
-}
-
-.testimonial-cta {
-    margin-top: 2rem;
-}
-
-.cta-note {
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-    opacity: 0.9;
-    font-style: italic;
-}
-
-.social-contact-section {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    text-align: center;
-    background-color: #f8f9fa;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    position: relative;
-    overflow: hidden;
-}
-
-.social-contact-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('image/contact-pattern.png');
-    opacity: 0.03;
-    pointer-events: none;
-}
-
-.social-contact-section h2 {
-    color: #043814;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    position: relative;
-}
-
-.social-contact-section h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: var(--accent-red);
-    border-radius: 3px;
-}
-
-.contact-subtitle {
-    color: #666;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-}
-
-.social-links-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.social-link {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    color: white;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.social-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.1);
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-    z-index: -1;
-}
-
-.social-link:hover::before {
-    transform: translateY(0);
-}
-
-.social-icon {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-}
-
-.social-link:hover .social-icon {
-    transform: rotate(360deg);
-}
-
-.social-icon svg {
-    width: 100%;
-    height: 100%;
-    fill: white;
-}
-
-/* Platform-specific colors */
-.whatsapp { background-color: #25D366; }
-.linkedin { background-color: #0077B5; }
-.instagram { background: linear-gradient(45deg, #405DE6, #833AB4, #E1306C); }
-.tiktok { background-color: #000000; }
-
-/* Hover effects */
-.social-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.whatsapp:hover { background-color: #128C7E; }
-.linkedin:hover { background-color: #005582; }
-.instagram:hover { background: linear-gradient(45deg, #833AB4, #C13584, #FD1D1D); }
-.tiktok:hover { background-color: #333; }
-
-/* Responsive design */
-@media (max-width: 600px) {
-    .social-links-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .social-link {
-        width: 80%;
-        justify-content: center;
-    }
-}
-@media (max-width: 768px) {
-    .testimonial-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .testimonial-image {
-        margin-bottom: 2rem;
-    }
-    
-    .client-badge {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        transform: none;
-        margin-top: 1rem;
-        display: inline-flex;
-        flex-direction: row;
-        gap: 0.5rem;
-    }
-    
-    .client-badge span {
-        margin-bottom: 0;
-        margin-right: 0.5rem;
-    }
-}
-
-      /* Success Stories Section */
-      .success-stories {
-          background-color: var(--white);
-          padding: 5rem 1.25rem;
-          text-align: center;
-          position: relative;
-          overflow: hidden;
-      }
-
-      .success-stories::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: url('image/success-pattern.png');
-          opacity: 0.03;
-          pointer-events: none;
-      }
-
-      .section-subtitle {
-          color: var(--dark-green);
-          font-size: clamp(1.125rem, 2vw, 1.375rem);
-          max-width: 50rem;
-          margin: 0 auto 3rem;
-          padding: 0 1rem;
-          position: relative;
-      }
-
-      .section-subtitle::after {
-          content: '';
-          position: absolute;
-          bottom: -10px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 50px;
-          height: 2px;
-          background-color: var(--accent-red);
-      }
-
-      .stories-row {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 2rem;
-          max-width: 90rem;
-          margin: 0 auto 2rem;
-          padding: 0 1rem;
-      }
-
-      .story-card {
-          background-color: var(--off-white);
-          border-radius: 0.75rem;
-          overflow: hidden;
-          box-shadow: 0 0.3125rem 0.9375rem rgba(0,0,0,0.1);
-          transition: all 0.3s ease;
-          width: calc(33.333% - 1.5rem);
-          position: relative;
-      }
-
-      .story-card:hover {
-          transform: translateY(-0.5rem);
-          box-shadow: 0 0.9375rem 1.875rem rgba(0,0,0,0.15);
-      }
-
-      .story-image {
-          height: 18rem;
-          overflow: hidden;
-          position: relative;
-      }
-
-      .story-image img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.5s ease;
-      }
-
-      .story-card:hover .story-image img {
-          transform: scale(1.05);
-      }
-
-      .story-content {
-          padding: 1.5rem;
-          text-align: center;
-      }
-
-      .story-content h3 {
-          color: var(--primary-green);
-          margin-bottom: 0.75rem;
-          font-size: 1.25rem;
-      }
-
-      .story-content p {
-          color: var(--dark-text);
-          font-style: italic;
-          font-size: 1rem;
-          line-height: 1.5;
-          margin-bottom: 1rem;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-line-clamp: 4;
-          -webkit-box-orient: vertical;
-      }
-
-      .client-badge {
-          display: inline-block;
-          background-color: var(--gold);
-          color: var(--dark-green);
-          padding: 0.25rem 0.75rem;
-          border-radius: 1rem;
-          font-size: 0.75rem;
-          font-weight: bold;
-          text-transform: uppercase;
-          transition: all 0.3s ease;
-      }
-
-      .story-card:hover .client-badge {
-          transform: scale(1.1);
-      }
-
-      .stats-bar {
-          display: flex;
-          justify-content: center;
-          gap: 2rem;
-          margin: 3rem auto;
-          max-width: 50rem;
-          flex-wrap: wrap;
-      }
-
-      .stat-item {
-          background: rgba(15, 119, 24, 0.1);
-          padding: 1rem 2rem;
-          border-radius: 0.5rem;
-          min-width: 10rem;
-          transition: all 0.3s ease;
-      }
-
-      .stat-item:hover {
-          transform: translateY(-5px);
-          background: rgba(15, 119, 24, 0.2);
-      }
-
-      .stat-number {
-          color: var(--primary-green);
-          font-size: 2rem;
-          font-weight: 900;
-          line-height: 1;
-      }
-
-      .stat-label {
-          color: var(--dark-green);
-          font-size: 0.875rem;
-          font-weight: 600;
-      }
-
-      /* Form Section */
-      .form-container {
-          background-color: var(--off-white);
-          padding: 3.125rem;
-          border-radius: 0.9375rem;
-          max-width: 43.75rem;
-          margin: 2.5rem auto;
-          box-shadow: 0 0.3125rem 1.5625rem rgba(0,0,0,0.1);
-          position: relative;
-          overflow: hidden;
-      }
-
-      .form-container::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: url('image/form-pattern.png');
-          opacity: 0.03;
-          pointer-events: none;
-      }
-
-      .form-container h2 {
-          color: var(--dark-green);
-          font-size: clamp(1.75rem, 4vw, 2.25rem);
-          text-align: center;
-          margin-bottom: 2.5rem;
-          font-weight: 700;
-          position: relative;
-      }
-
-      .form-container h2::after {
-          content: '';
-          position: absolute;
-          bottom: -10px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 80px;
-          height: 3px;
-          background-color: var(--accent-red);
-      }
-
-      .form-group {
-          margin-bottom: 1.875rem;
-          position: relative;
-      }
-
-      .form-group label {
-          display: block;
-          font-size: clamp(1rem, 2vw, 1.125rem);
-          font-weight: 600;
-          color: var(--dark-green);
-          margin-bottom: 0.625rem;
-      }
-
-      .form-group input,
-      .form-group select {
-          width: 100%;
-          padding: 0.9375rem;
-          font-size: 1rem;
-          border: 0.125rem solid #ddd;
-          border-radius: 0.5rem;
-          transition: all 0.3s ease;
-          background-color: var(--white);
-      }
-
-      .form-group input:focus,
-      .form-group select:focus {
-          border-color: var(--primary-green);
-          outline: none;
-          box-shadow: 0 0 0 0.1875rem rgba(76, 175, 80, 0.2);
-      }
-
-      .submit-btn {
-          display: block;
-          width: 100%;
-          background-color: var(--accent-red);
-          color: var(--white);
-          padding: 1.125rem;
-          font-size: clamp(1.125rem, 3vw, 1.25rem);
-          font-weight: 700;
-          border: none;
-          border-radius: 0.5rem;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          margin-top: 2.5rem;
-          position: relative;
-          overflow: hidden;
-          z-index: 1;
-      }
-
-      .submit-btn::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: var(--dark-red);
-          transform: translateX(-100%);
-          transition: transform 0.3s ease;
-          z-index: -1;
-      }
-
-      .submit-btn:hover {
-          background-color: var(--dark-red);
-          transform: translateY(-0.125rem);
-          box-shadow: 0 0.3125rem 0.9375rem rgba(233, 33, 11, 0.4);
-      }
-
-      .submit-btn:hover::before {
-          transform: translateX(0);
-      }
-
-      .required-field::after {
-          content: " *";
-          color: var(--accent-red);
-      }
-
-      /* Form Message Styles */
-      .form-message {
-          margin-top: 1.5rem;
-          padding: 1rem;
-          border-radius: 0.5rem;
-          font-weight: 600;
-          text-align: center;
-          transition: all 0.3s ease;
-      }
-
-      .success-message {
-          color: var(--primary-green);
-          background-color: rgba(15, 119, 24, 0.1);
-          border-left: 4px solid var(--primary-green);
-      }
-
-      .error-message {
-          color: var(--accent-red);
-          background-color: rgba(233, 33, 11, 0.1);
-          border-left: 4px solid var(--accent-red);
-      }
-
-      /* FAQ Section */
-      .faq-section {
-          background-color: var(--light-green);
-          padding: 5rem 1.25rem;
-          color: var(--dark-green);
-          max-width: 62.5rem;
-          margin: 2.5rem auto;
-          border-radius: 0.9375rem;
-          box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      }
-
-      .faq-item {
-          margin-bottom: 0.9375rem;
-          border-bottom: 0.0625rem solid var(--primary-green);
-          padding-bottom: 0.9375rem;
-          transition: all 0.3s ease;
-      }
-
-      .faq-item:hover {
-          border-bottom-color: var(--accent-red);
-      }
-
-      .faq-question {
-          font-size: clamp(1.125rem, 2vw, 1.375rem);
-          font-weight: 600;
-          padding: 0.9375rem 0;
-          cursor: pointer;
-          position: relative;
-          padding-right: 1.875rem;
-          transition: all 0.3s ease;
-      }
-
-      .faq-question:hover {
-          color: var(--accent-red);
-      }
-
-      .faq-question::after {
-          content: '+';
-          position: absolute;
-          right: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          font-size: 1.75rem;
-          color: var(--accent-red);
-          transition: all 0.3s ease;
-      }
-
-      .faq-item.active .faq-question::after {
-          content: '-';
-      }
-
-      .faq-answer {
-          font-size: clamp(1rem, 2vw, 1.125rem);
-          line-height: 1.6;
-          padding: 0 0 0.9375rem;
-          display: none;
-      }
-
-      .faq-item.active .faq-answer {
-          display: block;
-      }
-
-      .faq-note {
-          font-size: clamp(1rem, 2vw, 1.125rem);
-          font-style: italic;
-          margin-top: 1.875rem;
-          padding: 1.25rem;
-          background-color: rgba(255, 255, 255, 0.7);
-          border-left: 0.25rem solid var(--accent-red);
-          border-radius: 0 0.5rem 0.5rem 0;
-          transition: all 0.3s ease;
-      }
-
-      .faq-note:hover {
-          background-color: rgba(255, 255, 255, 0.9);
-      }
-
-      .section-cta {
-          text-align: center;
-          margin-top: 3.125rem;
-          padding: 0 1rem;
-      }
-
-      /* Responsive Adjustments */
-      @media (max-width: 1024px) {
-          .story-card {
-              width: calc(50% - 1rem);
-          }
-      }
-
-      @media (max-width: 768px) {
-          .pricing-content {
-              flex-direction: column;
-          }
-          
-          .pricing-details,
-          .pricing-image-container {
-              min-width: 100%;
-              max-width: 100%;
-          }
-          
-          .header,
-          .highlight,
-          .benefits-section,
-          .location-section,
-          .pricing-section,
-          .testimonial,
-          .form-container,
-          .faq-section,
-          .success-stories {
-              padding: 3rem 1rem;
-          }
-          
-          .urgency {
-              padding: 1.5rem;
-              margin: 0 1rem;
-          }
-          
-          .video-container {
-              width: 95%;
-              padding-bottom: 56.25%; /* 16:9 aspect ratio */
-          }
-          
-          .form-container {
-              padding: 2rem;
-              margin: 2rem 1rem;
-          }
-          
-          .section-title {
-              margin-bottom: 2rem;
-          }
-          
-          .benefit-item,
-          .location-item {
-              padding: 1.5rem;
-          }
-          
-          .story-image {
-              height: 15rem;
-          }
-          
-          .stories-row {
-              gap: 1.5rem;
-          }
-          
-          .stats-bar {
-              gap: 1rem;
-          }
-          
-          .stat-item {
-              min-width: 8rem;
-              padding: 0.75rem 1rem;
-          }
-          
-          .stat-number {
-              font-size: 1.5rem;
-          }
-      }
-
-      @media (max-width: 480px) {
-          h1 {
-              font-size: 2rem;
-          }
-          
-          .urgency-text {
-              font-size: 1.1rem;
-          }
-          
-          .highlight p,
-          .testimonial p {
-              font-size: 1.1rem;
-          }
-          
-          .benefits-grid,
-          .location-grid {
-              grid-template-columns: 1fr;
-          }
-          
-          .cta-button,
-          .submit-btn {
-              padding: 0.8rem 1.5rem;
-              font-size: 1rem;
-          }
-          
-          .story-card {
-              width: 100%;
-              max-width: 22rem;
-          }
-          
-          .story-image {
-              height: 14rem;
-          }
-          
-          .stats-bar {
-              flex-direction: column;
-              align-items: center;
-              gap: 0.5rem;
-          }
-          
-          .stat-item {
-              width: 100%;
-              max-width: 15rem;
-          }
-          
-          .logo-container {
-              max-width: 150px;
-          }
-          
-          .logo-container img {
-              max-height: 60px;
-          }
-      }
-
-      /* Animation Classes */
-      .fade-in {
-          animation: fadeIn 1s ease-in;
-      }
-
-      @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-      }
-
-      .slide-in-left {
-          animation: slideInLeft 1s ease-out;
-      }
-
-      @keyframes slideInLeft {
-          from { opacity: 0; transform: translateX(-50px); }
-          to { opacity: 1; transform: translateX(0); }
-      }
-
-      .pulse {
-          animation: pulse 2s infinite;
-      }
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #e6f0ff;
+            --accent-color: #003366;
+            --text-color: #333;
+            --white: #fff;
+            --success-color: #28a745;
+            --error-color: #dc3545;
+            --whatsapp-color: #25D366;
+            --linkedin-color: #0077B5;
+            --instagram-color: #E4405F;
+            --tiktok-color: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            line-height: 1.6;
+            font-size: 18px; /* Base font size increased */
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin: 25px 0;
+            padding: 0 20px;
+        }
+
+        .logo-container img {
+            max-height: 90px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 70px 25px 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--white);
+        }
+
+        .header h1 {
+            font-size: 3rem; /* Larger heading */
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .urgency-text {
+            font-weight: bold;
+            font-size: 1.4rem; /* Larger urgency text */
+            color: #ffeb3b;
+            animation: pulse 1.5s infinite;
+            margin: 25px 0;
+        }
+
+        .video-container {
+            margin: 25px auto;
+            text-align: center;
+            max-width: 450px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            margin-top: 25px;
+            font-weight: bold;
+            font-size: 1.2rem; /* Larger button text */
+            background-color: var(--accent-color);
+            color: var(--white);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #004080;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .highlight, .benefits-section, .pricing-section, .testimonial-container, .faq-section, .social-contact-section, .form-container {
+            max-width: 1200px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .highlight p {
+            font-size: 1.4rem; /* Larger highlight text */
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .highlight .text-bold {
+            font-weight: 700;
+        }
+
+        .benefits-grid, .pricing-content, .testimonial-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .benefit-item, .price-item, .faq-item {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-number {
+            font-weight: bold;
+            font-size: 1.6rem; /* Adjusted number size */
+            color: var(--primary-color);
+            margin-bottom: 12px;
+        }
+
+        .benefit-text {
+            font-size: 1.4rem; /* Larger benefit text */
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-size: 2.5rem; /* Larger section titles */
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-left: 5px solid var(--primary-color);
+            font-size: 1.3rem; /* Larger pricing text */
+        }
+
+        .price-item span:nth-child(2) {
+            font-weight: 600;
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .price-item span:nth-child(3) {
+            font-weight: 700;
+            color: var(--accent-color);
+            font-size: 1.4rem;
+        }
+
+        .check-icon {
+            color: var(--success-color);
+            font-size: 1.4rem; /* Larger check icons */
+            margin-right: 10px;
+        }
+
+        .pricing-note {
+            font-size: 1.2rem; /* Larger pricing notes */
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .pricing-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .pricing-content {
+            flex: 1 1 550px;
+        }
+
+        .pricing-image-container {
+            flex: 1 1 450px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .pricing-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .testimonial-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .testimonial-image, .testimonial-content {
+            flex: 1 1 450px;
+        }
+
+        .testimonial-image img {
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-content h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+
+        .testimonial-content p {
+            font-size: 1.3rem; /* Larger testimonial text */
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-content ul {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .testimonial-content li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+
+        .faq-question {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem; /* Larger FAQ text */
+            font-weight: 600;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.8rem;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 1.2rem; /* Larger FAQ answers */
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .form-container {
+            background-color: var(--white);
+            padding: 50px 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 35px;
+            font-size: 2.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 1.2rem; /* Larger form labels */
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem; /* Larger form inputs */
+        }
+
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 16px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: background-color 0.3s ease;
+            font-size: 1.2rem; /* Larger submit button */
+        }
+
+        .submit-btn:hover {
+            background-color: var(--accent-color);
+        }
+
+        .success-message {
+            color: var(--success-color);
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(40, 167, 69, 0.1);
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+
+        .error-message {
+            color: var(--error-color);
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(220, 53, 69, 0.1);
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+
+        /* Social Contact Section Styles */
+        .social-contact-section {
+            text-align: center;
+            padding: 70px 25px;
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .social-contact-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+
+        .contact-subtitle {
+            color: var(--text-color);
+            margin-bottom: 35px;
+            font-size: 1.3rem;
+        }
+
+        .social-links-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 18px 30px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            color: var(--text-color);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            font-size: 1.2rem;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .social-icon {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+
+        /* Platform-specific colors */
+        .social-link.whatsapp {
+            color: var(--whatsapp-color);
+            border-color: var(--whatsapp-color);
+        }
+
+        .social-link.whatsapp:hover {
+            background-color: var(--whatsapp-color);
+            color: var(--white);
+        }
+
+        .social-link.linkedin {
+            color: var(--linkedin-color);
+            border-color: var(--linkedin-color);
+        }
+
+        .social-link.linkedin:hover {
+            background-color: var(--linkedin-color);
+            color: var(--white);
+        }
+
+        .social-link.instagram {
+            color: var(--instagram-color);
+            border-color: var(--instagram-color);
+        }
+
+        .social-link.instagram:hover {
+            background-color: var(--instagram-color);
+            color: var(--white);
+        }
+
+        .social-link.tiktok {
+            color: var(--tiktok-color);
+            border-color: var(--tiktok-color);
+        }
+
+        .social-link.tiktok:hover {
+            background-color: var(--tiktok-color);
+            color: var(--white);
+        }
+
+        .section-cta {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            
+            .testimonial-grid, .benefits-grid, .pricing-section {
+                flex-direction: column;
+            }
+            
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .video-container iframe {
+                height: 350px;
+            }
+            
+            .social-links-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .social-link {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .highlight p, .benefit-text {
+                font-size: 1.2rem;
+            }
+            
+            .price-item {
+                font-size: 1.1rem;
+                padding: 18px;
+            }
+            
+            .pricing-note, .testimonial-content p {
+                font-size: 1.1rem;
+            }
+            
+            .pricing-image {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
     </style>
     <!-- Meta Pixel Code -->
     <script>
@@ -1428,413 +566,119 @@
     <!-- End Meta Pixel Code -->
 </head>
 <body>
-    <!-- logo -->
-    <div class="logo-container fade-in">
+    <!-- Logo -->
+    <div class="logo-container">
         <img src="./image/Deh Realties.png" alt="Deh Realties Logo" loading="lazy">
     </div>
-    
-    <!-- Header Section -->
+
+    <!-- Header -->
     <div class="header">
-        <h1 class="slide-in-left">Own A Land That Puts Your Name On The Map Forever</h1>
-        <p class="urgency-text pulse">ONLY 10 SLOTS, REOPENED, CLOSES AUGUST 17TH</p>
-        
-        <div class="video-container fade-in">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/owgW-RT-ql8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        <h1>Own a Farmland that Pays You for Life</h1>
+        <p class="urgency-text">ONLY 10 SLOTS, REOPENED, CLOSES December 17TH</p>
+        <div class="video-container">
+            <iframe src="https://www.instagram.com/reel/DPjQJEYCM8H/embed" frameborder="0" scrolling="no" allowfullscreen loading="lazy"></iframe>
         </div>
-        
-        <a href="#inspection" class="cta-button fade-in">
-            Book My Private Tour
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-        </a>
+        <a href="#inspection" class="cta-button">Book My Private Tour</a>
     </div>
-    
+
     <!-- Highlight Section -->
     <div class="highlight">
-        <p>Imagine flying into Nigeria, and less than an hour later, you're home. Your estate is just minutes from the <strong>Lekki-Epe International Airport</strong>. Your road? Smooth and stress-free, thanks to Dangote and Your street literally named after you.</p>
-        
+        <p class="text-bold">The Oil That Never Runs Dry. Palm oil demand keeps rising locally and globally. From kitchens to industries, it drives food, beauty, and energy markets. With <strong>Palm Crest Farmland</strong>, you're not just buying land you're stepping into a market that never sleeps.</p>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/uENrtrxrknI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            <iframe src="https://www.instagram.com/reel/DRQNR0AiGvN/embed" frameborder="0" scrolling="no" allowfullscreen loading="lazy"></iframe>
         </div>
-
         <p>This is more than real estate. It's something your grandchildren will thank you for and a legacy your family will never forget.</p>
-        
-        <a href="#inspection" class="cta-button">
-            Book My Private Tour
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-        </a>
+        <div class="section-cta">
+            <a href="#inspection" class="cta-button">Book My Private Tour</a>
+        </div>
     </div>
-    
+
     <!-- Benefits Section -->
     <div class="benefits-section">
         <h2 class="section-title">What You Get Instantly</h2>
-        
         <div class="benefits-grid">
             <div class="benefit-item">
                 <div class="benefit-number">1</div>
-                <div class="benefit-text">A Full Truck Of Blocks (Free)</div>
+                <div class="benefit-text">Deed Of Assignment</div>
             </div>
-            
             <div class="benefit-item">
                 <div class="benefit-number">2</div>
-                <div class="benefit-text">A Street Inside The Estate Named After You</div>
+                <div class="benefit-text">Contract Of Sale</div>
             </div>
-            
             <div class="benefit-item">
                 <div class="benefit-number">3</div>
-                <div class="benefit-text">₦2M Off Your Investment When You Buy Up To 3,000 Sqm</div>
+                <div class="benefit-text">Registered Survey</div>
             </div>
-            
             <div class="benefit-item">
                 <div class="benefit-number">4</div>
-                <div class="benefit-text">Government-Approved With C Of O</div>
-            </div>
-            
-            <div class="benefit-item">
-                <div class="benefit-number">5</div>
-                <div class="benefit-text">Flexible Payment Plans</div>
-            </div>
-            
-            <div class="benefit-item">
-                <div class="benefit-number">6</div>
-                <div class="benefit-text">All-Inclusive Pricing, No Hidden Charges</div>
+                <div class="benefit-text">Allocation</div>
             </div>
         </div>
-        
         <div class="section-cta">
-            <a href="#inspection" class="cta-button">
-                Book My Private Tour
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-            </a>
+            <a href="#inspection" class="cta-button">Book My Private Tour</a>
         </div>
     </div>
-    
-    <!-- Location Section -->
-    <div class="location-section">
-        <h2 class="section-title" style="color: white;">Strategic Location That Works for You</h2>
-        
-        <div class="location-grid">
-            <div class="location-item">
-                <div class="location-number">1</div>
-                <div class="location-text">10 minutes from Dangote-built Omu-Epe Road</div>
-            </div>
-            
-            <div class="location-item">
-                <div class="location-number">2</div>
-                <div class="location-text">5 minutes from Petrolex Mega Oil City</div>
-            </div>
-            
-            <div class="location-item">
-                <div class="location-number">3</div>
-                <div class="location-text">25 minutes from Africa's largest food hub</div>
-            </div>
-            
-            <div class="location-item">
-                <div class="location-number">4</div>
-                <div class="location-text">Close to Lekki-Epe International Airport</div>
-            </div>
-        </div>
 
-        <div class="urgency">
-            <p>Unfortunately even if you have the money, you can't just buy into Olubunmi Gardens. This offer is private, reopened only for 10 qualified investors.</p>
-            <p><strong>Only 10 Slots, Reopened, Closes August 17th.</strong></p>
-            <a href="#inspection" class="cta-button">
-                Book My Private Tour
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-    
     <!-- Pricing Section -->
     <div class="pricing-section">
         <h2 class="section-title">What It Costs</h2>
-        
         <div class="pricing-content">
-            <div class="pricing-details">
-                <div class="price-list">
-                    <div class="price-item">
-                        <span class="check-icon">✓</span>
-                        <span class="size">3,000 sqm</span>
-                        <span class="price-amount">₦28 Million</span>
-                    </div>
-                    
-                    <div class="price-item">
-                        <span class="check-icon">✓</span>
-                        <span class="size">1,000 sqm</span>
-                        <span class="price-amount">₦12 Million</span>
-                    </div>
-                    
-                    <div class="price-item">
-                        <span class="check-icon">✓</span>
-                        <span class="size">500 sqm</span>
-                        <span class="price-amount">₦5 Million</span>
-                    </div>
-                    
-                    <div class="price-item">
-                        <span class="check-icon">✓</span>
-                        <span class="size">300 sqm</span>
-                        <span class="price-amount">₦3 Million</span>
-                    </div>
-                </div>
-                
-                <p class="pricing-note">All-inclusive pricing. No extra charges & Flexible payment plans available up to 6 months.</p>
-                
-                <p class="urgency-note">This exclusive offer closes August 17th. After that, it's off the market.</p>
-                
-                <div class="section-cta">
-                    <a href="#inspection" class="cta-button">
-                        Book My Private Tour
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
+            <div class="price-list">
+                <div class="price-item"><span class="check-icon">✓</span><span>1 Acre (+60 palm trees)</span><span>₦3,000,000</span></div>
+                <div class="price-item"><span class="check-icon">✓</span><span>1 Hectare (+150 palm trees)</span><span>₦7,000,000</span></div>
+                <div class="price-item"><span class="check-icon">✓</span><span>3 Hectares (+450 palm trees)</span><span>₦21,000,000</span></div>
+                <div class="price-item"><span class="check-icon">✓</span><span>5 Hectares (+750 palm trees)</span><span>₦35,000,000</span></div>
+                <div class="price-item"><span class="check-icon">✓</span><span>10 Hectares (+1500 palm trees)</span><span>₦70,000,000</span></div>
+                <div class="price-item"><span class="check-icon">✓</span><span>20 Hectares (+3000 palm trees)</span><span>₦140,000,000</span></div>
             </div>
-
-            <div class="pricing-image-container">
-                <img src="image/landingpage.png" alt="Olubunmi Gardens Land Allocation Map" class="pricing-image" loading="lazy">
+            <p class="pricing-note">All packages include fully planted palm trees. Flexible payment plans available.</p>
+            <p class="pricing-note">Limited slots available. Once sold out, the price moves to the next tier.</p>
+            <div class="section-cta">
+                <a href="#inspection" class="cta-button">Book My Private Tour</a>
             </div>
+        </div>
+        <div class="pricing-image-container">
+            <img src="image/palmcrest.jpeg" alt="Palm Crest Farmland Map" class="pricing-image" loading="lazy">
         </div>
     </div>
 
     <!-- Testimonial Section -->
     <div class="testimonial-container">
         <div class="testimonial-grid">
-            <!-- Image Column -->
             <div class="testimonial-image">
-                <img src="./image/olubunmi.jpeg" alt="Deh Realty Founder" class="founder-portrait" loading="lazy">
-                <div class="client-badge">
-                    <span>500+</span>
-                    Satisfied Clients
-                </div>
+                <img src="./image/palmcrest2.jpeg" alt="Palm Crest Farmland" class="founder-portrait" loading="lazy">
             </div>
-            
-            <!-- Content Column -->
             <div class="testimonial-content">
-                <h2 class="testimonial-title">Why Choose Deh Realty?</h2>
-                <div class="testimonial-quote">
-                    <p>"We've helped over 500 clients secure land with complete peace of mind. Unlike traditional real estate, we provide:"</p>
-                    
-                    <ul class="benefit-list">
-                        <li><span class="check-icon">✓</span> No Omonile harassment</li>
-                        <li><span class="check-icon">✓</span> No land grabbers</li>
-                        <li><span class="check-icon">✓</span> No hidden stories</li>
-                        <li><span class="check-icon">✓</span> Only appreciating assets</li>
-                    </ul>
-                    
-                    <p class="closing-statement">You're seeing this because <strong>you might be the perfect candidate</strong> for this exclusive offer.</p>
-                </div>
-                
-                <div class="testimonial-cta">
-                    <a href="#inspection" class="cta-button">
-                        Book My Private Tour 
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8H15M8 1L15 8L8 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <p class="cta-note">Limited availability - Only 10 slots remaining</p>
+                <h2>Why Choose Palm Crest?</h2>
+                <p>"Palm Crest gives you more than farmland it gives you a secured, income producing asset backed by real value. Here's what sets us apart:"</p>
+                <ul>
+                    <li><span class="check-icon">✓</span> Verified farmland with C of O</li>
+                    <li><span class="check-icon">✓</span> Fully planted palm trees ready to yield</li>
+                    <li><span class="check-icon">✓</span> Zero encroachment or land disputes</li>
+                    <li><span class="check-icon">✓</span> A steady yearly income, not just land ownership</li>
+                </ul>
+                <p>If you're seeing this, <strong>you may be the kind of investor</strong> who understands long term value.</p>
+                <div class="section-cta">
+                    <a href="#inspection" class="cta-button">Book My Private Tour</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Client Success Stories Section -->
-    <div class="success-stories">
-        <h2 class="section-title">Client Success Stories</h2>
-        <p class="section-subtitle">See what our happy clients are saying about their investments</p>
-        
-        <!-- Top Row - 3 Stories -->
-        <div class="stories-row top-row">
-            <!-- Story 1 (Male) -->
-            <div class="story-card">
-                <div class="story-image">
-                    <img src="image/cl4.jpeg" alt="Mr. Adebayo showing his land documents" loading="lazy">
-                </div>
-                <div class="story-content">
-                    <h3>Mr. Success</h3>
-                    <p>"I'm building a legacy my grandkids will be proud of. I saw the growth potential in Olubunmi Gardens and secured 5 acres, not just for today, but for generations to come."</p>
-                    
-                </div>
-            </div>
-            
-            <!-- Story 2 (Female) -->
-            <div class="story-card">
-                <div class="story-image">
-                    <img src="image/cl5.jpeg" alt="Dr. Chioma at her land site" loading="lazy">
-                </div>
-                <div class="story-content">
-                    <h3> Mrs. Toyin A., Business Owner</h3>
-                    <p>"My husband and I saw the ad when it was first launched and we've been searching for opportunities to build a legacy. When we saw Olubunmi Gardens and its location in ibefun, we fell in love. The surrounding nature, the growth potential, we knew the property was perfect and everything checked out... it's perfect. We've secured 5acres and the payment plan made it really easy......."</p>
-
-                    
-                </div>
-            </div>
-            
-            <!-- Story 3 (Male) -->
-            <div class="story-card">
-                <div class="story-image">
-                    <img src="image/cl3.jpeg" alt="Alhaji Musa receiving C of O" loading="lazy">
-                </div>
-                <div class="story-content">
-                    <h3>Mr. Johnson</h3>
-                    <p>"I've been postponing land investments because Lagos prices can be crazy. But Olubunmi Gardens came with the right mix: affordability, C of O, resort vibe, and future value. No 'come back tomorrow' story, they delivered as promised."</p>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <!-- Bottom Row - 3 Stories -->
-        <div class="stories-row bottom-row">
-            <!-- Story 4 (Female) -->
-            <div class="story-card">
-                <div class="story-image">
-                    <img src="image/cl6.jpeg" alt="Mrs. Johnson at construction site" loading="lazy">
-                </div>
-                <div class="story-content">
-                    <h3>Mrs. Chioma</h3>
-                    <p>"My senior brother was scared to buy land in lagos because he's based in the UK and he didn't want to be scammed. But the deh_realties team was professional and kept us updated with videos and pictures. The process was smooth. Now, I I'm here to represent him, he bought an acre with deh realties in Olubunmi Gardens I'm so happy and he is as well"</p>
-                    
-                </div>
-            </div>
-            
-            <!-- Story 5 (Male) -->
-            <div class="story-card">
-                <div class="story-image">
-                    <img src="image/cl2.jpeg" alt="Engr. Okon with family" loading="lazy">
-                </div>
-                <div class="story-content">
-                    <h3>Engr. Okon</h3>
-                    <p>"I've dealt with companies that ghost after payment, but buying through deh_realties was different. She helped me secure land at Olubunmi Garden Estate with weekly updates, videos, and even a virtual allocation. She now handles all my deals, and I've referred her to several friends. She's more than a real estate consultant... she's family."</p>
-                    
-                </div>
-            </div>
-            
-            <!-- Story 6 (Male) -->
-            <div class="story-card">
-                <div class="story-image">
-                    <img src="image/cl1.jpeg" alt="Chief Williams at Petrolex site" loading="lazy">
-                </div>
-                <div class="story-content">
-                    <h3> Williams</h3>
-                    <p>"As a creative professional, I know potential when I see it. Olubunmi Gardens gives me that clean slate to build something special. With all the development coming to Epe, this estate will be like a peaceful but valuable retreat in 5 years."</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="stats-bar">
-            <div class="stat-item">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">Happy Clients</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Documentation</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Support</div>
-            </div>
-        </div>
-        
-        <div class="section-cta">
-            <a href="#inspection" class="cta-button">
-                Start My Success Story
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-    
-    <!-- Form Section -->
-    <div id="inspection" class="form-container">
-        <h2>Schedule Your Private Inspection</h2>
-        <form id="inspection-form">
-            <div class="form-group">
-                <label for="fullname" class="required-field">Full Name</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email" class="required-field">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="whatsapp" class="required-field">WhatsApp Number</label>
-                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Enter your WhatsApp number with country code" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="inspection_type" class="required-field">Preferred Inspection Type</label>
-                <select id="inspection_type" name="inspection_type" required>
-                    <option value="" disabled selected>Select inspection preference</option>
-                    <option value="Virtual Tour">Virtual Tour (Online)</option>
-                    <option value="Physical Inspection">Physical Inspection (On-site)</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="readytobuy" class="required-field">Purchase Readiness</label>
-                <select id="readytobuy" name="readytobuy" required>
-                    <option value="" disabled selected>Select your purchase status</option>
-                    <option value="Ready to buy now">Yes, I'm ready to buy now</option>
-                    <option value="Exploring options">No, I'm still exploring options</option>
-                </select>
-            </div>
-            
-            <button type="submit" class="submit-btn">
-                Schedule My Private Tour
-              
-            </button>
-            
-            <div id="form-message" class="form-message" style="display: none;"></div>
-        </form>
-    </div>
-    
     <!-- FAQ Section -->
     <div class="faq-section">
         <h2 class="section-title">FAQs</h2>
-        
         <div class="faq-item">
-            <div class="faq-question">Is this land government-approved?</div>
-            <div class="faq-answer">Yes, Olubunmi Gardens is fully government-approved with a Certificate of Occupancy (C of O).</div>
+            <div class="faq-question">Is this land government approved?</div>
+            <div class="faq-answer">Yes, Palm Crest Farmland is fully government-approved with a Certificate of Occupancy (C of O).</div>
         </div>
-        
         <div class="faq-item">
             <div class="faq-question">Can I pay in installments?</div>
-            <div class="faq-answer">Yes, we offer flexible payment plans up to 6 months with no hidden charges.</div>
+            <div class="faq-answer">Yes, we offer flexible payment plans up to 6 months with a 10% interest.</div>
         </div>
-        
         <div class="faq-item">
             <div class="faq-question">Who qualifies for the bonuses?</div>
-            <div class="faq-answer">All investors who purchase up to 3,000 sqm qualify for our ₦2M bonus and other incentives.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">Can I visit the land before buying?</div>
-            <div class="faq-answer">Absolutely! We encourage both virtual and physical inspections before you make your decision.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">What if I'm not based in Nigeria?</div>
-            <div class="faq-answer">No problem. We work with many diaspora clients and make the process seamless from start to finish.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">What happens after I pay?</div>
-            <div class="faq-answer">You receive your documents, land allocation, and full onboarding support from our team.</div>
-        </div>
-        
-        <div class="faq-note">
-            Have more questions? Contact us directly via WhatsApp for immediate assistance.
+            <div class="faq-answer">All investors who purchase up to 5 Hectares (+750 palm trees)  ₦35,000,000.</div>
         </div>
     </div>
 
@@ -1842,7 +686,6 @@
     <div class="social-contact-section">
         <h2>Connect With Us</h2>
         <p class="contact-subtitle">Reach out through your preferred platform</p>
-        
         <div class="social-links-container">
             <!-- WhatsApp -->
             <a href="https://wa.me/2348146464904" target="_blank" rel="noopener noreferrer" class="social-link whatsapp">
@@ -1853,7 +696,6 @@
                 </div>
                 <span>WhatsApp</span>
             </a>
-
             <!-- LinkedIn -->
             <a href="https://www.linkedin.com/in/hope-destiny-ellakeche-otene-8b3037220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
                 <div class="social-icon" aria-label="LinkedIn">
@@ -1864,7 +706,6 @@
                 </div>
                 <span>LinkedIn</span>
             </a>
-
             <!-- Instagram -->
             <a href="https://www.instagram.com/deh_realties?igsh=Zno5YWF3d2kzdWlh" target="_blank" rel="noopener noreferrer" class="social-link instagram">
                 <div class="social-icon" aria-label="Instagram">
@@ -1875,7 +716,6 @@
                 </div>
                 <span>Instagram</span>
             </a>
-
             <!-- TikTok -->
             <a href="https://www.tiktok.com/@deh_realties?_t=ZS-8yX1frdVyIT&_r=1" target="_blank" rel="noopener noreferrer" class="social-link tiktok">
                 <div class="social-icon" aria-label="TikTok">
@@ -1888,74 +728,84 @@
         </div>
     </div>
 
+    <!-- Form Section -->
+    <div id="inspection" class="form-container">
+        <h2>Schedule Your Private Inspection</h2>
+        <form id="inspection-form">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="whatsapp">WhatsApp Number</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Enter your WhatsApp number with country code" required>
+            </div>
+            <div class="form-group">
+                <label for="inspection_type">Preferred Inspection Type</label>
+                <select id="inspection_type" name="inspection_type" required>
+                    <option value="" disabled selected>Select inspection preference</option>
+                    <option value="Virtual Tour">Virtual Tour (Online)</option>
+                    <option value="Physical Inspection">Physical Inspection (On-site)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="readytobuy">Purchase Readiness</label>
+                <select id="readytobuy" name="readytobuy" required>
+                    <option value="" disabled selected>Select your purchase status</option>
+                    <option value="Ready to buy now">Yes, I'm ready to buy now</option>
+                    <option value="Exploring options">No, I'm still exploring options</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Schedule My Private Tour</button>
+            <div id="form-message" class="form-message" style="display:none;"></div>
+        </form>
+    </div>
+
     <script>
-        // FAQ Script
+        // FAQ toggle
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const item = question.parentNode;
                 item.classList.toggle('active');
-                
-                document.querySelectorAll('.faq-item').forEach(otherItem => {
-                    if (otherItem !== item && otherItem.classList.contains('active')) {
-                        otherItem.classList.remove('active');
-                    }
-                });
             });
         });
 
-        // Form Submission Script
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('inspection-form');
-            
-            if (form) {
-                form.addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    
-                    const submitBtn = this.querySelector('.submit-btn');
-                    const originalBtnText = submitBtn.textContent;
-                    submitBtn.textContent = 'Sending...';
-                    submitBtn.disabled = true;
-                    
-                    const formData = {
-                        fullname: this.fullname.value,
-                        email: this.email.value,
-                        whatsapp: this.whatsapp.value,
-                        inspection_type: this.inspection_type.value,
-                        readytobuy: this.readytobuy.value,
-                        submission_date: new Date().toLocaleString()
-                    };
-                    
-                    // Replace these with your actual EmailJS service ID and template ID
-                    emailjs.send('service_qp9grbs', 'template_oes9yro', formData)
-                        .then(function() {
-                            document.getElementById('form-message').innerHTML = `
-                                <div class="success-message">
-                                    Thank you! We've received your request and will contact you shortly.
-                                </div>
-                            `;
-                            form.reset();
-                        })
-                        .catch(function(error) {
-                            console.error('EmailJS Error:', error);
-                            document.getElementById('form-message').innerHTML = `
-                                <div class="error-message">
-                                    Oops! Something went wrong. Please try again or contact us directly.
-                                </div>
-                            `;
-                        })
-                        .finally(function() {
-                            document.getElementById('form-message').style.display = 'block';
-                            submitBtn.textContent = originalBtnText;
-                            submitBtn.disabled = false;
-                            
-                            setTimeout(function() {
-                                document.getElementById('form-message').style.display = 'none';
-                            }, 5000);
-                        });
+        // Form submission via EmailJS
+        document.getElementById('inspection-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            const formData = {
+                fullname: this.fullname.value,
+                email: this.email.value,
+                whatsapp: this.whatsapp.value,
+                inspection_type: this.inspection_type.value,
+                readytobuy: this.readytobuy.value,
+                submission_date: new Date().toLocaleString()
+            };
+
+            emailjs.send('service_qp9grbs','template_oes9yro',formData)
+                .then(() => {
+                    document.getElementById('form-message').innerHTML = `<div class="success-message">Thank you! We've received your request and will contact you shortly.</div>`;
+                    this.reset();
+                })
+                .catch((err) => {
+                    document.getElementById('form-message').innerHTML = `<div class="error-message">Oops! Something went wrong. Please try again.</div>`;
+                    console.error(err);
+                })
+                .finally(() => {
+                    document.getElementById('form-message').style.display = 'block';
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    setTimeout(() => {document.getElementById('form-message').style.display='none'}, 5000);
                 });
-            } else {
-                console.error('Form not found!');
-            }
         });
     </script>
 </body>
